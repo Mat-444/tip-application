@@ -1,0 +1,185 @@
+/*Chrome, Safari, Edge, Opéra*/
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*Firefox*/
+input[type=number] {
+  -moz-appearance: textfield;
+}
+input {
+  text-align: right;
+  background-color: #f3f8fb;
+  border: none;
+  padding: 7px 10px;
+  }
+  textarea:focus, input:focus {
+    color: rgba(0, 71, 75, 1);
+    border: rgba(0, 71, 75, 0.85);
+    font-weight: 800;
+  }
+
+
+* {
+  font-family: JetBrains Mono, sans-serif;
+  font-weight: 600;
+}
+body {
+  margin: 0 ;
+  padding: 0;
+  background-color: #c5e4e7;
+  width: 100%;
+  .titre_logo {
+    text-align: center;
+    margin-top: 80px;
+  }
+  .container {
+    display: inline-flex;
+    margin: 5% 14% 5% 14%;
+    padding: 5%;
+    background-color: white;
+    border-radius: 15px;
+    .calcul {
+      width: 55%;
+      padding-right: 20px;
+      display: inline-flex;
+      flex-wrap: wrap;
+
+      .bill, .select-tip, .nb_people {
+        width: 100%;
+      }
+      form {
+        width: 100%;
+        img {
+          width: 10px;
+          position: relative;
+          left: 25px;
+          top: 2px;
+        }
+        input {
+          width: 85%;
+          font-size: 18px;
+          color: rgba(0, 71, 75, 1);
+
+        }
+      }
+      h3 {
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 18px;
+      }
+      .select_tip {
+        .boutons_tip {
+          display: inline-flex;
+          flex-wrap: wrap;
+          button, input {
+            width: 90px;
+            margin: 5px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            height: 40px;
+            font-size: 18px;
+          }
+          input {
+            text-align: center;
+            padding: 0 10px;
+            color: rgba(0, 71, 75, 1);
+
+          }
+          button {
+            background-color: rgba(0, 71, 75, 1);
+          }
+        }
+      }
+      .nb_people {
+        display: flex;
+        flex-wrap: wrap;
+        form {
+          justify-content: center;
+          margin: auto;
+          .texte {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            h3 {
+
+            }
+            span {
+              color: red;
+              display: none;
+              font-size: 12px;
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+    .container_resultat {
+      display: block;
+      position: relative;
+      width: 42%;
+      background-color: #00474b;
+      border-radius: 10px;
+      #tip{
+        color: white;
+      }
+      #person{
+        color: grey;
+      }
+      .resultat{
+        color: #27cfae;
+      }
+      .montant{
+        width: 80%;
+        height: 50px;
+        display: inline-flex;
+        justify-content: space-between;
+        padding: 30px 10% 0px 10%;
+      }
+      .total{
+        width: 80%;
+        display: inline-flex;
+        justify-content: space-between;
+        padding: 0px 10% 0px 10%;
+      }
+      .reset{
+        position: absolute;
+        bottom: 30px;
+        width: 80%;
+        padding: 80px 10% 0px 10%;
+        button{
+          width: 100%;
+          height: 50px;
+          border-radius: 8px;
+          color: #00474b;
+          background-color :#27cfae;
+          border: none;
+          font-size: 18px;
+          font-weight: 800;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  body {
+    .container {
+      margin: 8% 0 0 0;
+      display: block;
+      .calcul {
+        width: 100%;
+      }
+      .container_resultat {
+        margin-top: 30px;
+        width: 100%;
+        .reset{
+          position: static;
+          padding-bottom:30px;
+        }
+        }
+      }
+    }
+  }

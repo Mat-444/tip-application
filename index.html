@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="language" content="en"/>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta charset="utf-8">
+    <title>Tip_calculator</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <link href ="styles.min.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="titre_logo">
+      <img src="images/logo.svg">
+    </div>
+    <div class="container">
+      <div class="calcul">
+        <div class="bill">
+          <form action>
+            <h3>Bill</h3>
+            <img src="images/icon-dollar.svg" alt="">
+            <input type="number" name="" autofocus placeholder="0" id="bill">
+          </form>
+        </div>
+        <div class="select_tip">
+          <h3>Select Tip %</h3>
+            <div class="boutons_tip">
+              <button type="button" name="pourcent" id="5_pourcent">5%</button>
+            <button type="button" name="pourcent" id="10_pourcent">10%</button>
+            <button type="button" name="pourcent" id="15_pourcent">15%</button>
+            <button type="button" name="pourcent" id="25_pourcent">25%</button>
+            <button type="button" name="pourcent" id="50_pourcent">50%</button>
+            <input type="number" name="pourcent" id="custom_pourcent" placeholder="Custom">
+            </div>
+          </div>
+          <div class="nb_people">
+            <form action>
+              <div class="texte">
+                <h3>Number of people</h3>
+                <span class="error" id="error">Can't be zero</span>
+              </div>
+              <div class="field">
+                <img src="images/icon-person.svg" alt="">
+                <input type="number" name="" value="" id="nb_people" placeholder="0">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="container_resultat">
+          <div class="montant">
+            <div class="texte">
+              <span id=tip>Tip Amount</span><br>
+              <span id=person>/ person</span>
+            </div>
+            <div class="resultat">
+                <h2 class="" id="tip_amount">$0.00</h2>
+            </div>
+
+          </div>
+          <div class="total">
+            <div class="texte">
+              <span id=tip>Tip Amount</span><br>
+              <span id=person>/ person</span>
+            </div>
+            <div class="resultat">
+              <h2 class="" id="total_person">$0.00</h2>
+            </div>
+          </div>
+          <div class="reset">
+            <button type="button" name="button" id="reset">RESET</button>
+          </div>
+        </div>
+    </div>
+  </body>
+  <script src="main.js" type="text/javascript">
+
+  </script>
+</html>
